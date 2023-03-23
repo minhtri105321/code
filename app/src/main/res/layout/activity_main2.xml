@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/matkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="Mật khẩu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="90dp"
+
+        >
+
+
+        <Button
+            android:id="@+id/dangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginStart="80dp"
+            android:text="Đăng Nhập " />
+
+        <Button
+            android:id="@+id/dangky"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Đăng Ký" />
+    </LinearLayout>
+</LinearLayout>
