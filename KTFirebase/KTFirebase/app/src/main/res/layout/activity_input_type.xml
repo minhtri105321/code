@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.InputType">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="341dp"
+        android:id="@+id/textInputLayoutName"
+        android:layout_height="96dp"
+        android:layout_marginTop="80dp"
+        android:hint="Name"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperText="Required*"
+        app:helperTextEnabled="true"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="#DF0012"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/baseline_error_24"
+        app:endIconDrawable="@drawable/check_mark">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text"
+            android:maxLength="20"
+            android:id="@+id/editName"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginTop="68dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:drawableStart="@drawable/drawble_focus"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

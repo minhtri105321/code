@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KT-Firebase</string>
+    <string name="title">Firebase Realtime Database App in Kotlin</string>
+</resources>
